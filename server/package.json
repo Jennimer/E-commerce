@@ -22,7 +22,7 @@
   "engines": {
     "node": "18.4"
   },
-  "devdependencies": {
+  "devDependencies": {
     "@babel/plugin-transform-private-property-in-object": "^7.22.11"
   }
 }
