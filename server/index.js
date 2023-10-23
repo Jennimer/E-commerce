@@ -14,7 +14,7 @@ dotenv.config();
 
 app.use(cors(
     {
-        origin: ["lll"]
+        origin: ["https://e-commerce-front-mz9k.onrender.com"]
     }
 ));
 
