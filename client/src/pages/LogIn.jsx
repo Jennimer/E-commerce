@@ -23,10 +23,7 @@ const Title = styled.h1`
 font-size: 25px;
 font-weight: 300;
 `
-const AlertText = styled.div`
-font-size: 18px;
-color: red;
-`
+
 const Form = styled.form`
 display: flex;
 flex-direction: column;

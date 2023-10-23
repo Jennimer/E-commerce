@@ -9,17 +9,17 @@ import GategoryThree from './images/Rainbow.png'
 
 export const sliderItems = [{
     id: 1,
-    img: MyImage,
+    img: MyImageTwo,
     title: "UNIQUE POSTERS",
     desc: "Designed in Finland",
-    bg: "f7f3ed",
+    bg: "f2f2f5",
 },
 {
     id: 2,
-    img: MyImageTwo,
+    img: MyImage,
     title: "BUILD YOUR OWN COLLECTION",
     desc: "Browse and find inspirations",
-    bg: "f2f2f5",
+    bg: "fcfbf7",
 },
 {
     id: 3,

@@ -12,6 +12,12 @@ app.use(cors());
 
 dotenv.config();
 
+app.use(cors(
+    {
+        origin: ["lll"]
+    }
+));
+
 mongoose
     .connect(
         process.env.MONGO_URL)
