@@ -9,7 +9,6 @@ align-items: center;
 justify-content: center;
 flex-direction: column;
 padding: 30px;
-
 @media only screen and (max-width: 400px) {
   margin-left: 20px;
   
@@ -36,7 +35,6 @@ margin: 3px;
 }
 `
 const InputContainer = styled.div`
-
   width: 50%;
   background-color: white;
   display: flex;

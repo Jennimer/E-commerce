@@ -52,7 +52,6 @@ max-height: 70vh;
 min-height: 30vh;
 display: flex;
 align-items: center;
-
 background-color: #${props => props.bg};
 
 `

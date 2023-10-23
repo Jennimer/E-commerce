@@ -184,14 +184,11 @@ height: 50vh;
 `
 const SummaryTitle = styled.h1`
 font-size: 16px;
-
 @media only screen and (max-width: 1200px) {
     font-size: 14px;
-    
   }
   @media only screen and (max-width: 600px) {
     font-size: 12px;
-    
   }
 `
 const SummaryItem = styled.span`

@@ -122,7 +122,6 @@ outline: none;
 color: #2b3333;
 padding: 14px 16px;
 background-color:white;
-
 margin: 0;
 @media only screen and (max-width: 400px) {
     
@@ -133,7 +132,7 @@ margin: 0;
 
 
 
-const LinkOption = styled.a`
+const LinkOption = styled.ul`
 color: black;
 padding: 12px 16px;
 text-decoration: none;
@@ -155,7 +154,10 @@ const MenuItem = styled.div`
     margin-left: 0px;
   }
 `;
-
+const linkStyle = {
+  textDecoration: "none",
+  color: 'black'
+};
 
 
 const Navbar = () =>
@@ -185,12 +187,12 @@ const Navbar = () =>
             <FilterText>POSTERS<ArrowDropDownIcon /></FilterText>
             <DropdownContent >
 
-              <LinkOption><Link to="/products/Flowers">Flowers</Link></LinkOption>
-              <LinkOption><Link to="/products/Kids">Kids</Link></LinkOption>
-              <LinkOption><Link to="/products/Graphic">Graphic</Link></LinkOption>
-              <LinkOption><Link to="/products/Abstract">Abstract</Link></LinkOption>
-              <LinkOption><Link to="/products/Nature">Nature</Link></LinkOption>
-              <LinkOption><Link to="/products">All Posters</Link></LinkOption>
+              <LinkOption><Link to="/products/Flowers" style={linkStyle}>Flowers</Link></LinkOption>
+              <LinkOption><Link to="/products/Kids" style={linkStyle}>Kids</Link></LinkOption>
+              <LinkOption><Link to="/products/Graphic" style={linkStyle}>Graphic</Link></LinkOption>
+              <LinkOption><Link to="/products/Abstract" style={linkStyle}>Abstract</Link></LinkOption>
+              <LinkOption><Link to="/products/Nature" style={linkStyle}>Nature</Link></LinkOption>
+              <LinkOption><Link to="/products" style={linkStyle}>All Posters</Link></LinkOption>
             </DropdownContent>
 
           </DropdownContainer>
@@ -202,10 +204,10 @@ const Navbar = () =>
             <FilterText>ROOM<ArrowDropDownIcon /></FilterText>
             <DropdownContent>
 
-              <LinkOption href="/products/Livingroom">Livingroom</LinkOption>
-              <LinkOption href="/products/Kitchen">Kitchen</LinkOption>
-              <LinkOption href="/products/Kids">Kids</LinkOption>
-              <LinkOption href="/products/Bedroom">Bedroom</LinkOption>
+              <LinkOption> <Link to="/products/Livingroom" style={linkStyle}>Livingroom</Link></LinkOption>
+              <LinkOption> <Link to="/products/Kitchen" style={linkStyle}>Kitchen</Link></LinkOption>
+              <LinkOption> <Link to="/products/Kids" style={linkStyle}>Kids</Link></LinkOption>
+              <LinkOption> <Link to="/products/Bedroom" style={linkStyle}>Bedroom</Link></LinkOption>
 
             </DropdownContent>
 

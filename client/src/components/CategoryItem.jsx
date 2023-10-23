@@ -24,10 +24,8 @@ flex-direction: column;
 `
 const Title = styled.h1`
 color: #5a5e5d;
-
 margin-bottom: 20px;
 @media only screen and (max-width: 600px) {
-   
     font-size: 20px;
   }
 `
