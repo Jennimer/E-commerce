@@ -185,12 +185,12 @@ const Navbar = () =>
             <FilterText>POSTERS<ArrowDropDownIcon /></FilterText>
             <DropdownContent >
 
-              <LinkOption href="/products/Flowers">Flowers</LinkOption>
-              <LinkOption href="/products/Kids">Kids</LinkOption>
-              <LinkOption href="/products/Graphic">Graphic</LinkOption>
-              <LinkOption href="/products/Abstract">Abstract</LinkOption>
-              <LinkOption href="/products/Nature">Nature</LinkOption>
-              <LinkOption href="/products">All Posters</LinkOption>
+              <LinkOption><Link to="/products/Flowers">Flowers</Link></LinkOption>
+              <LinkOption><Link to="/products/Kids">Kids</Link></LinkOption>
+              <LinkOption><Link to="/products/Graphic">Graphic</Link></LinkOption>
+              <LinkOption><Link to="/products/Abstract">Abstract</Link></LinkOption>
+              <LinkOption><Link to="/products/Nature">Nature</Link></LinkOption>
+              <LinkOption><Link to="/products">All Posters</Link></LinkOption>
             </DropdownContent>
 
           </DropdownContainer>
