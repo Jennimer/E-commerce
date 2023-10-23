@@ -22,7 +22,7 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div
-    ` 
+  ` 
 padding: 10px 10px 10px 30px;
 display: flex;
 width: 100%;
@@ -160,65 +160,65 @@ const MenuItem = styled.div`
 
 const Navbar = () =>
 {
-    const products = useSelector((state) => state.cart.products);
+  const products = useSelector((state) => state.cart.products);
 
-    const totalQuantity = () =>
+  const totalQuantity = () =>
+  {
+    let quantity = 0;
+    products.forEach((product) =>
     {
-        let quantity = 0;
-        products.forEach((product) =>
-        {
-            quantity += product.quantity
-        });
-        return quantity;
-    };
+      quantity += product.quantity
+    });
+    return quantity;
+  };
 
 
-    return (
-        < Container>
-            <Wrapper>
-                <Left>
-                    <Link to="/" style={{ textDecoration: 'none' }}><Logo>MY POSTER STORE</Logo></Link>
-                </Left>
-                <Center>
+  return (
+    < Container>
+      <Wrapper>
+        <Left>
+          <Link to="/" style={{ textDecoration: 'none' }}><Logo>MY POSTER STORE</Logo></Link>
+        </Left>
+        <Center>
 
-                    <DropdownContainer>
-                        <FilterText>POSTERS<ArrowDropDownIcon /></FilterText>
-                        <DropdownContent >
+          <DropdownContainer>
+            <FilterText>POSTERS<ArrowDropDownIcon /></FilterText>
+            <DropdownContent >
 
-                            <LinkOption href={`/products/Flowers`}>Flowers</LinkOption>
-                            <LinkOption href={`/products/Kids`}>Kids</LinkOption>
-                            <LinkOption href={`/products/Graphic`}>Graphic</LinkOption>
-                            <LinkOption href={`/products/Abstract`}>Abstract</LinkOption>
-                            <LinkOption href={`/products/Nature`}>Nature</LinkOption>
-                            <LinkOption href={`/products`}>All Posters</LinkOption>
-                        </DropdownContent>
+              <LinkOption href="/products/Flowers">Flowers</LinkOption>
+              <LinkOption href="/products/Kids">Kids</LinkOption>
+              <LinkOption href="/products/Graphic">Graphic</LinkOption>
+              <LinkOption href="/products/Abstract">Abstract</LinkOption>
+              <LinkOption href="/products/Nature">Nature</LinkOption>
+              <LinkOption href="/products">All Posters</LinkOption>
+            </DropdownContent>
 
-                    </DropdownContainer>
+          </DropdownContainer>
 
 
 
 
-                    <DropdownContainer>
-                        <FilterText>ROOM<ArrowDropDownIcon /></FilterText>
-                        <DropdownContent>
+          <DropdownContainer>
+            <FilterText>ROOM<ArrowDropDownIcon /></FilterText>
+            <DropdownContent>
 
-                            <LinkOption href={`/products/Livingroom`}>Livingroom</LinkOption>
-                            <LinkOption href={`/products/Kitchen`}>Kitchen</LinkOption>
-                            <LinkOption href={`/products/Kids`}>Kids</LinkOption>
-                            <LinkOption href={`/products/Bedroom`}>Bedroom</LinkOption>
+              <LinkOption href="/products/Livingroom">Livingroom</LinkOption>
+              <LinkOption href="/products/Kitchen">Kitchen</LinkOption>
+              <LinkOption href="/products/Kids">Kids</LinkOption>
+              <LinkOption href="/products/Bedroom">Bedroom</LinkOption>
 
-                        </DropdownContent>
+            </DropdownContent>
 
-                    </DropdownContainer>
-                </Center>
-                <Right>
-                    <MenuItem> <Link to="/cart">
-                        <Badge badgeContent={totalQuantity()} color="primary">
-                            <ShoppingCartIcon color="action" />
-                        </Badge></Link></MenuItem>
-                </Right>
-            </Wrapper></Container>
-    )
+          </DropdownContainer>
+        </Center>
+        <Right>
+          <MenuItem> <Link to="/cart">
+            <Badge badgeContent={totalQuantity()} color="primary">
+              <ShoppingCartIcon color="action" />
+            </Badge></Link></MenuItem>
+        </Right>
+      </Wrapper></Container>
+  )
 };
 
 export default Navbar;
