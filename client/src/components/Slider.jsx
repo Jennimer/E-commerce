@@ -157,7 +157,7 @@ const Slider = () =>
             <InfoContainer>
               <Title>{item.title}</Title>
               <Desc>{item.desc}</Desc>
-              <Button><Link to="/products" />SHOP NOW</Button>
+              <Link to="/products" ><Button>SHOP NOW</Button></Link>
             </InfoContainer>
           </Slide>
         ))}
