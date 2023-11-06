@@ -8,7 +8,7 @@ display: flex;
 padding: 30px;
 justify-content: space-between;
 align-items: center;
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     flex-direction: column;
     padding:60px;
   }
