@@ -26,4 +26,4 @@ A Full-stack e-commerce project. Just make for practicing,  because I wanted to 
 
 •	Admins control and manage the marketplace items and customer accounts
 •	The project contains database action and authentication for registration, admin and logout
-![image](https://github.com/Jennimer/E-commerce/assets/92848029/2ccab17f-ff23-46eb-ac94-20fb94101c8a)
+
